@@ -33,7 +33,7 @@ SELECTS.forEach((select, i) => {
     SELECTS_BODY[i].classList.toggle('show')
   })
   SELECTS_BODY[i].addEventListener('click', function (e) {
-    SELECTS[i].textContent = e.target.textContent
+    SELECTS[i].firstChild.textContent = e.target.textContent
     this.classList.remove('show')
   })
 })
