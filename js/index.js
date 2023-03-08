@@ -25,7 +25,7 @@ INPUTS.forEach((input, i) => {
   })
 })
 
-const SELECTS = document.querySelectorAll('.registration__select button')
+const SELECTS = document.querySelectorAll('.registration__select div')
 const SELECTS_BODY = document.querySelectorAll('.select-body')
 
 SELECTS.forEach((select, i) => {

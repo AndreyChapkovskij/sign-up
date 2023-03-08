@@ -18,10 +18,8 @@
   color: var(--light-black);
   margin-bottom: 31px;
 }
-.registration__inputs {
-}
 .registration__input input,
-.registration__select button,
+.registration__select div,
 .registration__textarea textarea {
   width: 100%;
   background: var(--white-grey-second);
@@ -73,7 +71,7 @@
 }
 .registration__input input::placeholder,
 .registration__textarea textarea::placeholder,
-.registration__select button {
+.registration__select div {
   text-align: start;
   font-weight: 400;
   font-size: 18px;
@@ -81,7 +79,7 @@
   color: var(--light-grey);
 }
 .registration__input input,
-.registration__select button {
+.registration__select div {
   height: 59px;
 }
 .registration__textarea textarea {
@@ -94,7 +92,7 @@
   margin-bottom: 17px;
 }
 
-.registration__select button,
+.registration__select div,
 .registration__select {
   position: relative;
 }
@@ -106,6 +104,8 @@
   top: 59px;
   width: 100%;
   background: var(--white);
+  border: 1px solid var(--white-grey-third);
+  border-radius: 0px 0px 6px 6px;
 }
 .select-body li {
   cursor: pointer;
@@ -122,7 +122,7 @@
 .select-body.show {
   display: block;
 }
-.registration__select button::after {
+.registration__select div::after {
   content: '';
   position: absolute;
   right: 21.85px;
@@ -136,7 +136,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.registration__select button::first-letter {
+.registration__select div {
+  display: flex;
+  align-items: center;
+}
+.registration__select div span::first-letter {
   text-transform: uppercase;
 }
 .registration__textarea {
