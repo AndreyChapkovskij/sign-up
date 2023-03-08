@@ -195,7 +195,6 @@
 @media (min-width: 1200px) {
   .registration__submit:hover {
     background: var(--red-second);
-    border: 1px solid var(--red);
     color: var(--white);
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
