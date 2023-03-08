@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <section id="sign-up">
+      <div class="container">
+        <div class="wrap">
+          <div class="location">
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A49b769976a76fc3e3e7d534426396040f5c98a63865f70ef89f86edcf7a22071&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
+          </div>
+          <form class="registration">
+            <h2 class="registration__title">
+              записаться на шиномонтаж со скидкой
+            </h2>
+            <div class="registration__inputs">
+              <div class="registration__input registration__input_required">
+                <input type="text" id="name" required />
+                <label for="name">ваше имя<span>*</span></label>
+              </div>
+              <div class="registration__input registration__input_required">
+                <input type="tel" id="phone" required />
+                <label for="phone">номер телефона<span>*</span></label>
+              </div>
+              <div class="registration__select">
+                <button>марка автомобиля</button>
+                <ul class="select-body">
+                  <li data-value="nissan">nissan</li>
+                  <li data-value="renault">renault</li>
+                  <li data-value="bmw">bmw</li>
+                </ul>
+              </div>
+              <div class="registration__select">
+                <button>модель</button>
+                <ul class="select-body">
+                  <li data-value="transit">Transit</li>
+                  <li data-value="scenic">Scenic</li>
+                  <li data-value="fiesta">Fiesta</li>
+                </ul>
+              </div>
+              <div class="registration__textarea">
+                <textarea placeholder="Сообщение"></textarea>
+              </div>
+              <button class="registration__submit">забронировать</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
